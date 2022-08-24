@@ -4,6 +4,8 @@ Code and data for SARS-CoV-2 sequencing in Northern California
 ## Files in this repository
 - sc2_pipeline.sh: this is the driving script for analyzing fastq data which takes as input a PAUI (identifier assigned by CDPH) and the source lab (data is stored based on which facility sequenced the data).
 - metadata.csv: metadata file contains more PAUI's than there exists fasta and mutation files because sequencing failed, was ClearLabs sequenced (too poor quality for our use), or sequencing data has not been received yet. 
+- ivar2vcf.py is used (with bcftools) to create low-frequency mutation consensus genomes
+- delta_all_indel_matrix.pl code to generate low-frequency mutation matrix
 
 ## Output files
 fasta and mutation files for this repository can be found at DOI https://doi.org/10.6078/D1JQ5C
