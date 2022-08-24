@@ -16,5 +16,5 @@ Matrices were constructed for all genomes at any frequency above 2% of reads (to
 ## Low frequency mutation consensus files
 We use ivar for consensus files, but ivar doesn't have a frequency cutoff for calling mutations and uses majority rule or more (not less), so we needed to create low frequency consensus files by introducing LFMs (low frequency mutations) into the reference genome. To do this we took the output of ivar variants, converted it to a VCF, then used bcftools to introduce the variants to the reference genome.
 
-```python ivar2vcf.py -ic -po -af 0.02 mutations/500030432.variants.tsv 500030432.vcf
-bcftools consensus --fasta-ref ../../../sc2/references/sars-cov-2.fa -H A -o 500030432.consensus.bcftools.fa 500030432.vcf.gz```
+```python ivar2vcf.py -ic -po -af 0.02 mutations/500030432.variants.tsv 500030432.vcf```
+```bcftools consensus --fasta-ref ../../../sc2/references/sars-cov-2.fa -H A -o 500030432.consensus.bcftools.fa 500030432.vcf.gz```
