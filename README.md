@@ -1,4 +1,4 @@
-# SC2_GenVar
+# Genetic variation in sequenced SARS-CoV-2 genomes in Northern California
 Code and data for SARS-CoV-2 sequencing in Northern California
 
 ## Files in this repository
