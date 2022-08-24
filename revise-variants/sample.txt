@@ -1,0 +1,4 @@
+ORF1a:S3675-    alpha,beta,gamma,BA.1,BA.2
+ORF1a:G3676-    alpha,beta,gamma,BA.1,BA.2
+ORF1a:F3677-    alpha,beta,gamma,BA.2
+
